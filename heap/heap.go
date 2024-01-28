@@ -12,14 +12,14 @@ func (h *MaxHeap) Insert(key int) {
 }
 
 func (h *MaxHeap) Extract() int {
-	extracted := h.array[0]
-
-	length := len(h.array) - 1
-
 	if len(h.array) == 0 {
 		fmt.Println("Cannot extract from empty array")
 		return -1
 	}
+	extracted := h.array[0]
+
+	length := len(h.array) - 1
+
 	h.swap(0, length)
 	h.array = h.array[:length]
 
