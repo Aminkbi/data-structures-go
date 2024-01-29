@@ -1,5 +1,18 @@
 Data structures in go
 
     1-Heap (Max):
-        .Insert(): Insert an element into the heap array.  
+        .Insert(): Inserts an element into the heap array.  
         .Extract(): Extracts the first element of the heap array.
+
+    2-Linked-List:
+        .Prepend(): Adds an element to the head of the linked list
+        .Delete(): Removes if the element exists in the list.
+        .PrintLinkedList(): prints the list.
+    
+    3-Queue: 
+        .Enqueue(): Adds an element to the end of the queue.
+        .Dequeue(): returns the first element of the queue.
+
+    4-Stack: 
+        .Push(): Adds an element to the end of the stack.
+        .Pop(): Pops the last added item.

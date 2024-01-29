@@ -1,19 +1,24 @@
 package main
 
-import (
-	"data-structures-go/heap"
-	"fmt"
-)
+import linked_list "data-structures-go/linked-list"
 
 func main() {
 
-	m := &heap.MaxHeap{}
-
-	buildHeap := []int{10, 20, 30, 40, 50}
-
-	for _, val := range buildHeap {
-		m.Insert(val)
-		fmt.Println(m)
+	head := &linked_list.Node{
+		Next: nil,
+		Data: 3,
+	}
+	list := &linked_list.LinkedList{
+		Head:   head,
+		Length: 1,
 	}
 
+	newNode := &linked_list.Node{
+		Data: 1,
+		Next: nil,
+	}
+
+	list.Prepend(newNode)
+
+	list.DeleteNode(11)
 }
