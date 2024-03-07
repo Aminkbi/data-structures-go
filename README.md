@@ -16,3 +16,7 @@ Data structures in go
     4-Stack: 
         .Push(): Adds an element to the end of the stack.
         .Pop(): Pops the last added item.
+
+    5-Binary Search Tree
+        .Insert(val int): Inserts a new element with the given value into the Binary Search Tree.
+        .Search(value int) bool: Searches for a given value in the Binary Search Tree. Returns true if the value is found, false otherwise. 

@@ -1,24 +1,23 @@
 package main
 
-import linked_list "data-structures-go/linked-list"
+import (
+	binarysearchtree "data-structures-go/binary-search-tree"
+	"fmt"
+)
 
 func main() {
 
-	head := &linked_list.Node{
-		Next: nil,
-		Data: 3,
+	bst := &binarysearchtree.Node{
+		Value: 5,
+		Left:  nil,
+		Right: nil,
 	}
-	list := &linked_list.LinkedList{
-		Head:   head,
-		Length: 1,
-	}
+	bst.Insert(4)
+	bst.Insert(3)
+	bst.Insert(2)
+	bst.Insert(1)
 
-	newNode := &linked_list.Node{
-		Data: 1,
-		Next: nil,
-	}
+	bst.Insert(10)
+	fmt.Println(bst.Search(10))
 
-	list.Prepend(newNode)
-
-	list.DeleteNode(11)
 }
